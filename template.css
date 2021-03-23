@@ -1,0 +1,97 @@
+
+.half {
+    width: 50%;
+}
+
+.left {
+    display: inline-block;
+    width: 48%;
+    height: 450px;
+    margin-top: 0px;
+}
+
+.right {
+    position: fixed;
+    top: 200px;
+    right: 40px;
+}
+
+.content {
+    background: linear-gradient(darkblue, lightblue);
+}
+
+table#mytable {
+
+    font-family: 'Sansita Swashed', cursive;
+    background-color: yellow;
+    border: 3px solid grey;
+    margin-left: 30%;
+}
+
+table#mytable caption {
+    font-family: "cursive";
+    font-size: 3em;
+}
+
+td,
+th {
+    border: 2px solid grey;
+    padding: 20px 30px;
+    width: 200px;
+    text-align: center;
+}
+
+.header {
+    border: 3px double black;
+    background: linear-gradient(red, blue);
+    color: rgb(253, 229, 229);
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+}
+
+img#n1,
+img#n5 {
+    height: 80px;
+    width: 80px;
+}
+
+img#n2,
+img#n4,
+img#n6 {
+    height: 65px;
+    width: 65px;
+}
+
+img#n3,
+img#n7 {
+    height: 50px;
+    width: 50px;
+}
+
+
+table#mytable th {
+    background-color: lightcoral;
+    font-size: 2em;
+}
+
+.footer {
+    background-color: black;
+    position: relative;
+    font-size: 2em;
+    margin-top: 6%;
+    text-align: center;
+}
+
+table#table_details {
+    color: white;
+    font-size: 2em;
+}
+
+table#table_details input,
+table#table_details button {
+    height: 50px;
+    font-size: 0.8em;
+    /* width: 100px; */
+}
+

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive to-do list</title>
+        <style>
+            .header {
+                border: 3px double black;
+                background: linear-gradient(red, blue);
+                color: rgb(253, 229, 229);
+                text-align: center;
+                font-family: 'Dancing Script', cursive;
+                font-size: 2em;
+            }
+
+            .main {
+                background: linear-gradient(lightpink, purple);
+            }
+
+            .main button {
+                height: 100px;
+                width: 200px;
+                margin-top: 11%;
+                margin-left: 42%;
+                font-size: 2em;
+                background-color: rgb(248, 106, 106);
+                font-family: 'Lobster', cursive;
+                color: whitesmoke;
+            }
+
+            button:hover {
+                background-color: rgb(250, 147, 147);
+            }
+
+            .footer {
+                background-color: black;
+                position: relative;
+                font-size: 2em;
+                margin-top: 11%;
+                text-align: center;
+            }
+
+            @media only screen and (max-width: 576px) {
+
+                img#n1,
+                img#n5 {
+                    height: 2%;
+                    width: 2%;
+                }
+
+                img#n2,
+                img#n4,
+                img#n6 {
+                    height: 2.5%;
+                    width: 2.5%;
+                }
+
+                img#n3,
+                img#n7 {
+                    height: 3%;
+                    width: 3%;
+                }
+
+                .header {
+                    font-size: 1em;
+                }
+
+                .main button {
+                    margin-left: 33%;
+                }
+            }
+
+            @media only screen and (max-width: 768px) {
+
+                img#n1,
+                img#n5 {
+                    height: 40px;
+                    width: 40px;
+                }
+
+                img#n2,
+                img#n4,
+                img#n6 {
+                    height: 35px;
+                    width: 35px;
+                }
+
+                img#n3,
+                img#n7 {
+                    height: 30px;
+                    width: 30px;
+                }
+
+                .header {
+                    font-size: 1.4em;
+                }
+
+                .main button {
+                    margin-left: 37%;
+                }
+            }
+
+            @media only screen and (max-width: 992px) {
+
+                img#n1,
+                img#n5 {
+                    height: 55px;
+                    width: 55px;
+                }
+
+                img#n2,
+                img#n4,
+                img#n6 {
+                    height: 50px;
+                    width: 50px;
+                }
+
+                img#n3,
+                img#n7 {
+                    height: 45px;
+                    width: 45px;
+                }
+
+                .header {
+                    font-size: 1.6em;
+                }
+
+                .main button {
+                    margin-left: 40%;
+                }
+            }
+
+            @media only screen and (max-width: 1200px) {
+
+                img#n1,
+                img#n5 {
+                    height: 65px;
+                    width: 65px;
+                }
+
+                img#n2,
+                img#n4,
+                img#n6 {
+                    height: 60px;
+                    width: 60px;
+                }
+
+                img#n3,
+                img#n7 {
+                    height: 55px;
+                    width: 55px;
+                }
+
+                .header {
+                    font-size: 1.6em;
+                }
+
+                .main button {
+                    margin-left: 40%;
+                }
+            }
+
+            @media only screen and (min-width: 1200px) {
+
+                img#n1,
+                img#n5 {
+                    height: 65px;
+                    width: 65px;
+                }
+
+                img#n2,
+                img#n4,
+                img#n6 {
+                    height: 60px;
+                    width: 60px;
+                }
+
+                img#n3,
+                img#n7 {
+                    height: 55px;
+                    width: 55px;
+                }
+
+                .header {
+                    font-size: 1.6em;
+                }
+
+                .main button {
+                    margin-left: 40%;
+                }
+            }
+        </style>
+        <script>
+            angular.module("mapp", []).controller("name", function ($scope) {
+                $scope.user = prompt("Enter your Name: ");
+            }
+            );
+
+        </script>
+    </head>
+
+    <body ng-app="mapp">
+
+        <div class="header">
+            <h1>
+
+                <img src="notes.png" alt="" id="n2">
+                <img src="notes.png" alt="" id="n3">
+                <img src="notes.png" alt="" id="n4">
+                <img src="notes.png" alt="" id="n5">
+                <img src="notes.png" alt="" id="n6">
+                <img src="notes.png" alt="" id="n7">
+                To-Do List
+                <img src="notes.png" alt="" id="n7">
+                <img src="notes.png" alt="" id="n6">
+                <img src="notes.png" alt="" id="n5">
+                <img src="notes.png" alt="" id="n4">
+                <img src="notes.png" alt="" id="n3">
+                <img src="notes.png" alt="" id="n2">
+
+            </h1>
+        </div>
+        <div class="main" ng-controller="name">
+
+            <h2>Welcome <span style='color: blue'>{{user}}</span> to your one and only step towards task-handling! In
+                this step you will have a To-Do List in preference order of your deadlines .</h2>
+            <h3>
+                Click on the button below to get started with your first step towards success!
+            </h3>
+
+            <button> <a href="template1.html">Get Started</a> </button>
+            <div class="footer">
+                <span style='color: white'>Happy to help!</span>
+            </div>
+        </div>
+
+    </body>
+
+</html>
