@@ -3,8 +3,10 @@
 # To Do List
 
 <br>
-This is a web application which creates a To-Do-List for a user by taking input and updating the task name and deadline in the table in realtime. This also provides a feature to print the created To-Do-List or save it locally for future purposes.
+A To-Do List web app to prioritize your tasks.
 <br>
-Tech-stack used: HTML5, CSS3, JavaScript, Jquery, AngularJS
-<br>
+**Features** <br>
+1. Able to see real-time task and deadline updation in the web-page.
+2. Shows the tasks in sorted order regardless of the order in which input is provided.
+3. Provides the facility to save the to-do list as a pdf in the system by clicking on Print button for offline access. <br>
 Link: <a href="https://sunainacode.github.io/to-do-list/"> To Do List App </a>
